@@ -1,0 +1,124 @@
+.logo-img1 {
+  top: 0;
+  left: 0;
+  width: 528px;
+  height: 327px;
+  position: absolute;
+}
+.logo-img2 {
+  top: 72%;
+  left: 73%;
+  width: 315px;
+  height: 195px;
+  position: absolute;
+}
+.logo-img3 {
+  top: 0;
+  right: 0;
+  width: 178px;
+  height: 110px;
+  position: absolute;
+}
+.logo-img4 {
+  position: absolute;
+  z-index: -1;
+  right: 10%;
+  top: 14%;
+  max-width: 100%;
+  animation: move5 10s infinite linear;
+}
+.heading {
+  transform: translateY(150px);
+  font-size: 56px;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 13%;
+}
+.tf-text {
+  background: linear-gradient(90deg, #8d4dfc, #ff3cac);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px transparent;
+  position: relative;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+
+.floating-circle {
+  position: absolute;
+  border-radius: 50%;
+  animation: float 5s ease-in-out infinite;
+  z-index: -1;
+}
+
+.floating-circle.filled {
+  background: linear-gradient(45deg, #5142fc, #a74fff);
+}
+
+.floating-circle.bordered {
+  background: transparent;
+  position: relative;
+}
+
+.floating-circle.bordered::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, #5142fc, #a74fff) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+.floating-circle:nth-child(odd) {
+  animation-duration: 6s;
+}
+
+.floating-circle:nth-child(even) {
+  animation-duration: 7s;
+}
+
+.heading-tiny {
+  font-size: 20px;
+  color: white;
+  margin-left: 13%;
+  font-weight: 600;
+  margin-top: 60px;
+}
+.Buttons {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 13%;
+  gap: 20px;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes move5 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
