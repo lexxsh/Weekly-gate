@@ -47,18 +47,18 @@ const Main = () => {
         alt="Axies Logo 3"
         className="logo-img4"
       />
-      <div class="heading">Journey Back in Time</div>
+      <div class="heading">과거의 교훈, 오늘의 지혜</div>
       <h1 class="heading mb-style">
         <div class="tf-text" data-text="Extraordinary Monster NFTs">
           Explore the Past
         </div>
       </h1>
-      <div class="heading">Like Never Before</div>
+      <div class="heading">역사로 이어지는 교육의 다리</div>
       {circles.map((circle, index) => (
         <FloatingCircle key={index} {...circle} />
       ))}
       <div class="heading-tiny">
-        Interactive AI-Powered Webtoons and Games at Your Fingertips
+        "당신의 손끝에서 즐기는 AI 기반 인터랙티브 웹툰과 게임"
       </div>
       <div className="Buttons">
         <Button type="explore" />
