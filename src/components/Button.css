@@ -1,14 +1,17 @@
 .button {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 10px 20px;
-  font-size: 20px;
-  border-radius: 25px;
+  font-size: 15px;
+  border-radius: 30px;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 130px;
-  height: 50px;
+  width: 151px;
+  height: 58px;
+  font-weight: 700;
+  background: transparent;
 }
 
 .button span {
@@ -16,7 +19,6 @@
 }
 
 .explore {
-  background: #000000;
   color: white;
   border: 2px solid #5865f2;
 }
@@ -27,7 +29,6 @@
 }
 
 .create {
-  background: #000000;
   color: white;
   border: 2px solid #5865f2;
 }

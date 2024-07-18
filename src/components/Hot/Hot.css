@@ -1,0 +1,126 @@
+.Card-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.Hot-container {
+  margin-left: 12%;
+}
+.Hot-Title {
+  display: flex;
+  font-size: 40px;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  margin-top: 120px;
+}
+
+.HotCard-Container {
+  width: 360px;
+  height: 472px;
+  background: #343444;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+}
+.HotCard-Container {
+  width: 360px;
+  height: 472px;
+  background: #343444;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.HotCard-Container:hover {
+  transform: translateY(-15px);
+}
+.HotCard-img {
+  width: 100%;
+  height: 320px;
+  background: rgb(122, 122, 122);
+  border-radius: 25px;
+}
+.HotCard-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+.HotCard-Country {
+  width: 49px;
+  height: 24px;
+  background: #7700ff;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HotCard-section1 {
+  display: flex;
+  gap: 100px;
+}
+.HotCard-section2 {
+  display: flex;
+  align-items: center;
+}
+.Card-img {
+  border-radius: 10px;
+}
+.HotCard-text1 {
+  margin-left: 15px;
+}
+.HotCard-text2 {
+  margin-left: 120px;
+}
+.HotCard-Creator {
+  font-size: 17px;
+  color: #8a8a80;
+}
+.HotCard-Name {
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+}
+
+.Hot-container .slick-dots {
+  display: flex;
+  color: white;
+  padding: 0;
+  bottom: -50px;
+  left: -30px;
+}
+.Hot-container .slick-dots li {
+  margin: 0 10px;
+}
+.Hot-container .slick-dots li button:before {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  opacity: 1;
+}
+.Hot-container .slick-dots li.slick-active button:before {
+  color: #8c00ff;
+  opacity: 1;
+}

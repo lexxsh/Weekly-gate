@@ -88,14 +88,17 @@
   font-size: 20px;
   color: white;
   margin-left: 13%;
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 60px;
 }
 .Buttons {
   display: flex;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-left: 13%;
   gap: 20px;
+}
+.Container {
+  padding-bottom: 80px;
 }
 @keyframes float {
   0% {
