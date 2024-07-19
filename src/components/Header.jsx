@@ -12,11 +12,6 @@ function Header() {
       </div>
       <nav className="nav">
         <a href="#home">Home</a>
-        <a href="#explore">Explore</a>
-        <a href="#activity">Activity</a>
-        <a href="#community">Community</a>
-        <a href="#page">Page</a>
-        <a href="#contact">Contact</a>
       </nav>
       <div className="search-wallet">
         <FaSearch color="white" />
