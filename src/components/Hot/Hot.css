@@ -32,22 +32,6 @@
   gap: 30px;
   margin-top: 50px;
 }
-.HotCard-Container {
-  width: 360px;
-  height: 472px;
-  background: #343444;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 30px;
-  margin-top: 50px;
-}
 
 .HotCard-Container:hover {
   transform: translateY(-15px);
@@ -123,4 +107,12 @@
 .Hot-container .slick-dots li.slick-active button:before {
   color: #8c00ff;
   opacity: 1;
+}
+@media (max-width: 800px) {
+  .Hot-Title {
+    font-size: 35px;
+  }
+  .HotCard-Container {
+    margin-top: 30px;
+  }
 }

@@ -125,3 +125,25 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 1200px) {
+  .heading {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .heading-tiny {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  .heading-tiny {
+    font-size: 12px;
+  }
+}

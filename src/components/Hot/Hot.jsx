@@ -17,14 +17,14 @@ const Hot = () => {
     arrows: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1400,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 930,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

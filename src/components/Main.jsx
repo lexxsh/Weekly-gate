@@ -1,6 +1,7 @@
 import React from 'react'
 import './Main.css'
 import Button from './Button'
+import { FaBook, FaGamepad } from 'react-icons/fa'
 
 const FloatingCircle = ({ filled, size, top, left }) => {
   const style = {
@@ -61,8 +62,8 @@ const Main = () => {
         "당신의 손끝에서 즐기는 AI 기반 인터랙티브 웹툰과 게임"
       </div>
       <div className="Buttons">
-        <Button type="explore" />
-        <Button type="create" />
+        <Button type="explore" text="만화 만들기" icon={FaBook} />
+        <Button type="create" text="게임만들기" icon={FaGamepad} />
       </div>
     </div>
   )

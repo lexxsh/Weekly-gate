@@ -11,11 +11,10 @@ function Header() {
         <span>타임 캡슐</span>
       </div>
       <nav className="nav">
-        <a href="#home">Home</a>
+        <div className="search-wallet">
+          <FaSearch color="white" />
+        </div>
       </nav>
-      <div className="search-wallet">
-        <FaSearch color="white" />
-      </div>
     </header>
   )
 }
