@@ -1,0 +1,9 @@
+.check-modal-content {
+  width: 80vw;
+  height: 300px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

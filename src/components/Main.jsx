@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Main.css'
 import Button from './Button'
 import { FaBook, FaGamepad } from 'react-icons/fa'
+import Checkmodal from './Modal/checkmodal'
 
 const FloatingCircle = ({ filled, size, top, left }) => {
   const style = {
@@ -10,6 +11,7 @@ const FloatingCircle = ({ filled, size, top, left }) => {
     top: `${top}%`,
     left: `${left}%`,
   }
+
   return (
     <div
       className={`floating-circle ${filled ? 'filled' : 'bordered'}`}
@@ -18,11 +20,19 @@ const FloatingCircle = ({ filled, size, top, left }) => {
   )
 }
 const Main = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const openModal = () => {
+    setIsModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false)
+  }
   const circles = [
     { filled: true, size: 40, top: 20, left: 40 },
-    { filled: false, size: 30, top: 70, left: 80 },
+    { filled: false, size: 30, top: 50, left: 60 },
     { filled: true, size: 55, top: 40, left: 60 },
-    { filled: false, size: 65, top: 20, left: 90 },
+    { filled: false, size: 65, top: 20, left: 70 },
     { filled: true, size: 35, top: 50, left: 30 },
     { filled: false, size: 28, top: 60, left: 10 },
   ]
@@ -48,23 +58,35 @@ const Main = () => {
         alt="Axies Logo 3"
         className="logo-img4"
       />
-      <div class="heading">과거의 교훈, 오늘의 지혜</div>
-      <h1 class="heading mb-style">
-        <div class="tf-text" data-text="Extraordinary Monster NFTs">
+      <div className="heading">과거의 교훈, 오늘의 지혜</div>
+      <h1 className="heading mb-style">
+        <div className="tf-text" data-text="Extraordinary Monster NFTs">
           Explore the Past
         </div>
       </h1>
-      <div class="heading">역사로 이어지는 교육의 다리</div>
+      <div className="heading">역사로 이어지는 교육의 다리</div>
       {circles.map((circle, index) => (
         <FloatingCircle key={index} {...circle} />
       ))}
-      <div class="heading-tiny">
+      <div className="heading-tiny">
         "당신의 손끝에서 즐기는 AI 기반 인터랙티브 웹툰과 게임"
       </div>
       <div className="Buttons">
-        <Button type="explore" text="만화 만들기" icon={FaBook} />
-        <Button type="create" text="게임만들기" icon={FaGamepad} />
+        <Button
+          type="explore"
+          text="만화 만들기"
+          icon={FaBook}
+          onClick={openModal}
+        />
+        <Button
+          type="create"
+          text="게임만들기"
+          icon={FaGamepad}
+          onClick={openModal}
+        />
       </div>
+
+      <Checkmodal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   )
 }
